@@ -2,7 +2,7 @@ let http = require('http');
 let url = require('url');
 let { getDate } = require('./modules/utils');
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 http.createServer(function (req, res) {
 
